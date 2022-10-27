@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({
             //Method will be executed once the timer is over
             //Start app's main activity
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }, SPLASH_TIME_OUT)
